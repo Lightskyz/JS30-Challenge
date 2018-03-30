@@ -2,18 +2,22 @@
 
 I decided to take the [JavaScript 30 Challenge by Wes Bos](https://javascript30.com/). It'll be the first daily challenge that I'll commit for next days.
 
-## Goal
-- Develop w/ my homemade framework a solution with PugJS and SASS
-- Create a script to generate a "challenge" 
-- Showcase each project
+## Dependencies
+To convert the pug and sass files to be converted into html and css files, install npm dependencies `npm install`
+It will allow Gulp to work properly and launch a local static server `gulp serve`
+
+## Content of this project
+- Each challenge is developed with PugJS, SASS and Javascript
+- You can generate a challenge: `python new.py [challenge-name]`
+- Challenges are convert into HTML and CSS files thanks to gulp
 - Hosting it with Netlify
-- Write a small blog article about what I learned from challenge
+- Local static server with BrowserSync
 
 ## Checklist
 
-- [ ] 1. JavaScript Drum Kit
-- [ ] 2. JS + CSS Clock
-- [ ] 3. Playing with CSS Variables and JS
+- [x] 1. JavaScript Drum Kit
+- [x] 2. JS + CSS Clock
+- [x] 3. Playing with CSS Variables and JS
 - [ ] 4. Array Cardio, Day 1
 - [ ] 5. Flex Panels Image Gallery
 - [ ] 6. Ajax Type Ahead
