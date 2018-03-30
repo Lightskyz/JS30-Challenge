@@ -3,8 +3,13 @@
 I decided to take the [JavaScript 30 Challenge by Wes Bos](https://javascript30.com/). It'll be the first daily challenge that I'll commit for next days.
 
 ## Dependencies
-To convert the pug and sass files to be converted into html and css files, install npm dependencies `npm install`
-It will allow Gulp to work properly and launch a local static server `gulp serve`
+To convert the pug and sass files to be converted into html and css files, install npm dependencies: 
+
+`npm install`
+
+It will allow Gulp to work properly and launch a local static server:
+
+`gulp serve`
 
 ## Content of this project
 - Each challenge is developed with PugJS, SASS and Javascript
