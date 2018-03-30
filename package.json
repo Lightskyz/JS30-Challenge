@@ -1,0 +1,15 @@
+{
+    "name": "js30-challenge",
+    "version": "1.0.0",
+    "description": "I decided to take the [JavaScript 30 Challenge by Wes Bos](https://javascript30.com/). It'll be the first daily challenge that I'll commit for next days.",
+    "devDependencies": {
+        "browser-sync": "^2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-pug": "^3.3.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.2.1",
+        "gulp-sourcemaps": "^2.6.4"
+    }
+}
