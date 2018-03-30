@@ -19,7 +19,7 @@ def createChallengeFolder(challenge):
 
 # 1 - Create a Pug file for the challenge
 def createPugFile(challenge):
-    template = "doctype html \n\nhtml(lang='en') \n\thead \n\t\tlink(rel='stylesheet', href='style.css')\n\t\tmeta(charset='utf-8')\n\t\ttitle " + challenge + "\n\tbody \n\t\t\n\t\t\n\t\tscript(type='text/javascript')\n\t\t\tinclude script.js"
+    template = "doctype html \n\nhtml(lang='en') \n\thead \n\t\tlink(rel='stylesheet', href='style.min.css')\n\t\tmeta(charset='utf-8')\n\t\ttitle " + challenge + "\n\tbody \n\t\t\n\t\t\n\t\tscript(type='text/javascript')\n\t\t\tinclude script.js"
     path = "src/challenge/" + challenge + "/"
     pug_file = challenge + ".pug"
     challengePug = open(path + pug_file, 'a')

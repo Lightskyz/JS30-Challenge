@@ -46,7 +46,7 @@ gulp.task("serve", ["build:sass", "build:pug"], function() {
     });
 
     gulp.watch(['./src/challenge/**/*.scss', './src/style.scss'], ["build:sass"]);
-    gulp.watch(['./src/challenge/**/*.scss', './src/challenge/**/*.js', './src/index.pug'], ["build:pug"]);
+    gulp.watch(['./src/challenge/**/*.pug', './src/challenge/**/*.js', './src/index.pug'], ["build:pug"]);
 });
 
 gulp.task("build", ["build:sass", "build:pug"]);
