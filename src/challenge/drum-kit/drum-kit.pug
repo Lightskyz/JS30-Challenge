@@ -1,0 +1,49 @@
+doctype html 
+
+html(lang='en') 
+	head 
+		link(rel='stylesheet', href='style.css')
+		meta(charset='utf-8')
+		title drum-kit
+	body 
+		.keys
+			.key(data-key='65')
+				kbd A
+				span.sound clap
+			.key(data-key='83')
+				kbd S
+				span.sound hihat
+			.key(data-key='68')
+				kbd D
+				span.sound clap
+			.key(data-key='70')
+				kbd F
+				span.sound kick
+			.key(data-key='71')
+				kbd G
+				span.sound openhat
+			.key(data-key='72')
+				kbd H
+				span.sound ride
+			.key(data-key='74')
+				kbd J
+				span.sound snare
+			.key(data-key='75')
+				kbd K
+				span.sound tom
+			.key(data-key='76')
+				kbd L
+				span.sound tink
+		
+		audio(data-key='65', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/clap.wav')
+		audio(data-key='83', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/hihat.wav')
+		audio(data-key='68', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/kick.wav')
+		audio(data-key='70', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/openhat.wav')
+		audio(data-key='71', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/boom.wav')
+		audio(data-key='72', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/ride.wav')
+		audio(data-key='74', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/snare.wav')
+		audio(data-key='75', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/tom.wav')
+		audio(data-key='76', src='https://s3-us-west-2.amazonaws.com/aws-s3-bucket-dev-antoine/sounds/tink.wav')
+
+		script(type='text/javascript')
+			include 'script.js'
