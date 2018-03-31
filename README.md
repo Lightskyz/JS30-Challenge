@@ -15,7 +15,8 @@ It will allow Gulp to work properly and launch a local static server:
 - Each challenge is developed with PugJS, SASS and Javascript
 - You can generate a challenge: `python new.py [challenge-name]`
 - Challenges are convert into HTML and CSS files thanks to gulp
-- Hosting it with Netlify
+- Hot reloading available!
+- Hosting it with Netlify (configuration -- folder: /dist & script: `gulp build`)
 - Local static server with BrowserSync
 
 ## Checklist
