@@ -5,6 +5,8 @@ var sass = require('gulp-sass');
 var pug = require("gulp-pug");
 var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -32,6 +34,19 @@ gulp.task("build:pug", function() {
         .pipe(pug())
         .pipe(gulp.dest("dist"))
         .pipe(browserSync.stream());
+});
+
+// Get JS modules from node_modules and concatenate in one file
+gulp.task("build:js", function() {
+    return gulp
+        .src([
+            "node_modules/prismjs/prism.js",
+            "src/script.js"
+        ])
+        .pipe(concat("script.js"))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(uglify())
+        .pipe(gulp.dest("dist"));
 });
 
 // Static server
