@@ -41,7 +41,7 @@ def createJsFile(challenge):
 
 # 4 - Add the new challenge to index.pug
 def addChallenge(challenge):
-    challenge_import = "\t\tbr\n\t\ta(href='/" + challenge + "/') " + challenge
+    challenge_import = "\t\t\tli #[a(href='/" + challenge + "/') " + challenge + "]"
     index = "src/index.pug"
     if os.stat(index).st_size == 0:
         open_global = open(index, 'a')
