@@ -2,11 +2,17 @@ doctype html
 
 html(lang='en') 
 	head 
+		link(rel='stylesheet', href='../../style.min.css')
 		link(rel='stylesheet', href='style.min.css')
 		meta(charset='utf-8')
 		title array-cardio
 	body 
 		p #[em Psst: have a look at the JavaScript Console] 💁
+
+		pre
+			code.language-javascript
+				const test = TEST;
 		
+		script(type='text/javascript', src='../../script.min.js')
 		script(type='text/javascript')
 			include script.js
