@@ -1,1 +1,65 @@
-<!DOCTYPE html ><html lang="en"> <head> <link rel="stylesheet" href="style.min.css"/><meta charset="utf-8"/><title>array-cardio-two</title></head><body> <script type="text/javascript"></script></body></html>
+<!DOCTYPE html ><html lang="en"> <head> <link rel="stylesheet" href="../../style.min.css"/><link rel="stylesheet" href="style.min.css"/><meta charset="utf-8"/><title>array-cardio-two</title></head><body> <h2>People Array</h2><pre> <code class="language-javascript">const people = [{ name: 'Wes', year: 1988 }, { name: 'Kait', year: 1986 }, { name: 'Irv', year: 1970 },{ name: 'Lux', year: 2015 }];</code></pre><h2>Comments Array</h2><pre> <code class="language-javascript">const comments = [ { text: 'Love this!', id: 523423 }, { text: 'Super good', id: 823423 }, { text: 'You are the best', id: 2039842 }, { text: 'Ramen is my fav food ever', id: 123523 }, { text: 'Nice Nice Nice!', id: 542328 }];</code></pre><h2>1. some() method</h2><pre><code class="language-javascript">// is at least one person 19 or older?
+const isAdult = people.some(person => 
+	((new Date()).getFullYear()) - person.year >= 19);</code></pre><hr/><h2>2. every() method</h2><pre><code class="language-javascript">// is everyone 19 or older?
+const isAdult = people.every(person => 
+	((new Date()).getFullYear()) - person.year >= 19);</code></pre><hr/><h2>3. find() method</h2><pre><code class="language-javascript">// find the comment with the ID of 823423
+const comment = comments.find(comment => comment.id === 823423);</code></pre><hr/><h2>4. findIndex() method</h2><pre><code class="language-javascript">// Find the comment with this ID
+const index = comments.findIndex(comment => comment.id === 823423);</code></pre><hr/><h2>5. slice() method & spread [...array] operator</h2><pre><code class="language-javascript">// delete the comment with the ID of 823423
+const newComments = [
+	...comments.slice(0, index),
+ 	...comments.slice(index + 1)
+];</code></pre><script type="text/javascript" src="../../script.min.js"></script><script type="text/javascript">// ## Array Cardio Day 2
+
+const people = [
+    { name: 'Wes', year: 1988 },
+    { name: 'Kait', year: 1986 },
+    { name: 'Irv', year: 1970 },
+    { name: 'Lux', year: 2015 }
+];
+
+const comments = [
+    { text: 'Love this!', id: 523423 },
+    { text: 'Super good', id: 823423 },
+    { text: 'You are the best', id: 2039842 },
+    { text: 'Ramen is my fav food ever', id: 123523 },
+    { text: 'Nice Nice Nice!', id: 542328 }
+];
+
+console.table(people);
+// Some and Every Checks
+// Array.prototype.some() // is at least one person 19 or older?
+// Array.prototype.every() // is everyone 19 or older?
+
+const isAdult = people.some(person =>
+    ((new Date()).getFullYear()) - person.year >= 19);
+
+console.log({ isAdult });
+
+const allAdults = people.every(person =>
+    ((new Date()).getFullYear()) - person.year >= 19);
+
+console.log({ allAdults });
+
+// Array.prototype.find()
+// Find is like filter, but instead returns just the one you are looking for
+// find the comment with the ID of 823423
+
+const comment = comments.find(comment =>
+    comment.id === 823423);
+
+console.log(comment);
+
+// Array.prototype.findIndex()
+// Find the comment with this ID
+// delete the comment with the ID of 823423
+
+const index = comments.findIndex(comment => comment.id === 823423);
+
+//comments.splice(index, 1);
+
+const newComments = [
+    ...comments.slice(0, index),
+    ...comments.slice(index + 1)
+];
+
+//console.log(index);</script></body></html>
