@@ -1,0 +1,20 @@
+doctype html 
+
+html(lang='en') 
+	head 
+		link(rel='stylesheet', href='style.min.css')
+		meta(charset='utf-8')
+		title ajax-type
+	body
+
+		form.search-form
+			input.search(type='text', placeholder="City or State")
+			ul.suggestions
+				li Filter for a city
+				li or a state
+
+		script(type='text/javascript').
+			const endpoint = 'https://gist.githubusercontent.com/Lightskyz/a28cce9146078c5d74c9bcd75f4a216f/raw/9a58b959702d8483d281ce78b657fd454391baf5/cities.json';
+		
+		script(type='text/javascript')
+			include script.js
