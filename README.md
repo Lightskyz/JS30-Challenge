@@ -24,10 +24,10 @@ It will allow Gulp to work properly and launch a local static server:
 - [x] 1. JavaScript Drum Kit
 - [x] 2. JS + CSS Clock
 - [x] 3. Playing with CSS Variables and JS
-- [ ] 4. Array Cardio, Day 1
-- [ ] 5. Flex Panels Image Gallery
-- [ ] 6. Ajax Type Ahead
-- [ ] 7. Array Cardio, Day 2
+- [x] 4. Array Cardio, Day 1
+- [x] 5. Flex Panels Image Gallery
+- [x] 6. Ajax Type Ahead
+- [x] 7. Array Cardio, Day 2
 - [ ] 8. Fun with HTML5 Canvas
 - [ ] 9. Dev Tools Domination
 - [ ] 10. Hold Shift and Check Checkboxes
